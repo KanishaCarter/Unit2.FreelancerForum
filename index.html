@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Forum</title>
+    
+</head>
+<body>
+    <h1>Freelancer Information Form</h1>
+    <form id="freelancer-info-form">
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <input type="text" id="occupation" placeholder="Enter your occupation" required>
+        <input type="number" id="price" placeholder="Enter your starting price" required>
+        <button type="submit">Add Freelancer Information</button>
+    </form>
+    
+    <h1>Freelancer List</h1>
+    
+    <p class="average-price">Average Starting Price: $<span id="average-price">0</span></p>
+    
+    <div class="freelancer-list" id="freelancer-list"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
