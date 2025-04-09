@@ -5,20 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelancer Forum</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <!--Container stores introduction to Freelancer Forum-->
+    <!--Container stores Welcome to Freelancer Forum-->
     <div>
-        <h1>Welcome to the Freelancer Forum.</h1>
+        <section class = "introduction">
+            <!--WELCOME GOES HERE-->
+        </section>
     </div>
 
     <!--Container stores list of freelancers rendered to webpage-->
-    <div id="freelancerContainer"></div>
+    <div>
+        <section class ="rosterContainer">
+            <!--ROSTER GOES HERE-->
+        </section>
+    </div>
     
     <!--Container stores form for user to input contact information-->
-    <div id="formContainer"></div>
-
-    <!--Linked JS file-->
+    <div>
+        <section class ="formContainer">
+            <p>Enter your contact information into the form below:</p>
+            <form action="/action_page.php" target="_blank" method="GET">
+                <label for="fname">First Name</label>
+                <label for="lname">Last Name</label><br>
+                <input type="text" value="Jane">
+                <input type="text" value="Doe"><br>
+                <label for="email">Email</label>
+                <label for="phonenumber">Phone Number</label><br>
+                <input type="text" value="jane@yahoo.com">
+                <input type="text" value="555-555-555">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
